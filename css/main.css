@@ -78,6 +78,15 @@ canvas {
   height: 420px;
 }
 
+#gift {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+}
+
 #pinkboard {
   position: relative;
   top: 0%;
