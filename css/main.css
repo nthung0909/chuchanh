@@ -109,6 +109,11 @@ canvas {
   top: -20px;
 }
 
+.STARDUST4 {
+  position: relative !important;
+  top: 80px;
+}
+
 /* 星空css */
 html, body {
   padding: 0px;
