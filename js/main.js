@@ -9,7 +9,6 @@ const c1 = createCanvas({
 const tela = c1.canvas;
 const canvas = c1.context;
 
-// $("body").append(tela);
 $("body").append(c1.canvas);
 
 class Particle1 {
@@ -188,24 +187,3 @@ function createCanvas(properties) {
 }
 
 update();
-setInterval(
-  function() {
-    const imgs = ["imgs/img.jpg", "imgs/img2.jpg", "imgs/img3.jpg"];
-    const img = document.getElementById("img");
-    console.log(img.attributes.src);
-    if(img) {
-      img.remove();
-      const newImg = document.createElement("img");
-      newImg.id = "img";
-      newImg.className = "img";
-      if(img.attributes.src.value === imgs[0])
-        newImg.src = imgs[1];
-      else if(img.attributes.src.value === imgs[1])
-        newImg.src = imgs[2];
-      else
-        newImg.src = imgs[0];
-      document.getElementsByClassName("title")[0].appendChild(newImg);
-    }
-  },
-  4000
-);
